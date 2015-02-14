@@ -114,7 +114,7 @@ GameObject:
   m_Layer: 0
   m_Name: Single Joystick
   m_TagString: joystick
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 1177953632, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -133,7 +133,7 @@ MonoBehaviour:
   touchPad: 0
   fadeGUI: 0
   deadZone: {x: 0, y: 0}
-  normalize: 0
+  normalize: 1
   tapCount: 0
 --- !u!131 &176553403
 GUITexture:
@@ -147,8 +147,8 @@ GUITexture:
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
-    x: 50
-    y: 50
+    x: 100
+    y: 125
     width: 100
     height: 100
   m_LeftBorder: 0
@@ -162,7 +162,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 176553401}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: .00999999978, y: .00999999978, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -224,7 +224,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11402368, guid: 3333230896d9c2e4e84ae994d2e3473c, type: 2}
       propertyPath: useKeyboardInput
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5002370, guid: 3333230896d9c2e4e84ae994d2e3473c, type: 2}
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 176553402}
   speed: 6
-  useKeyboardInput: 1
+  useKeyboardInput: 0
 --- !u!58 &722928385
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -514,7 +514,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1582746086
 MonoBehaviour:
   m_ObjectHideFlags: 0
